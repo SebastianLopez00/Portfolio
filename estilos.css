@@ -1,0 +1,138 @@
+/* styles.css */
+
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+body {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que cubra toda la altura de la pantalla */
+    margin: 0;
+    padding: 20px; /* Espacio alrededor del contenido */
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centrar menú horizontalmente */
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Secciones */
+section {
+    width: 100%;
+    max-width: 800px; /* Limitar el ancho para centrar y controlar el contenido */
+    padding: 40px;
+    text-align: center;
+}
+
+/* Sección de proyectos */
+.project {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el botón de modo oscuro */
+button#dark-mode-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button#dark-mode-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode header {
+    background-color: #222;
+}
+
+body.dark-mode a {
+    color: #3498db;
+}
+
+body.dark-mode .project {
+    border-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+/* Estilo para la imagen de la sección About */
+.about-img {
+    width: 150px;  /* Ajuste de ancho más pequeño */
+    height: auto;  /* Mantiene la proporción original de la imagen */
+    border-radius: 50%; /* Bordes redondeados para mantener la forma circular */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-img:hover {
+    transform: scale(1.05); /* Efecto hover para agrandar la imagen ligeramente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

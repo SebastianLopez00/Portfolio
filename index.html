@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio - Sebastian Lopez</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header class="bg-dark text-white py-3">
+            <nav class="container d-flex justify-content-center">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="about" class="container text-center my-5">
+            <h1 class="display-4">¡Hola! Soy Sebastian Lopez</h1>
+            <p class="lead">Desarrollador Frontend con experiencia en HTML, CSS, JavaScript y manejo básico de bases de datos.</p>
+            
+            <!-- Imagen de perfil -->
+            <img src="imagenes/profile.png" alt="Sebastian Lopez" style="width: 150px; height: auto; border-radius: 50%;" class="about-img mt-4">
+
+        </section>
+        
+        <section id="projects" class="container my-5">
+            <h2 class="text-center mb-4">Mis Proyectos</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <img src="imagenes/proyecto1.jpeg" alt="Proyecto 1" loading="lazy" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Registro de Alumnos</h3>
+                            <p class="card-text">Este es un proyecto para la clase de Programacion WEB.</p>
+                            <a href="https://github.com/SebastianLopez00/RegistroAlumno" class="btn btn-primary">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="container my-5">
+            <h2 class="text-center mb-4">Habilidades</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">HTML - Avanzado</li>
+                <li class="list-group-item">CSS - Avanzado</li>
+                <li class="list-group-item">JavaScript - Intermedio</li>
+                <li class="list-group-item">Bases de datos - Básico</li>
+                <li class="list-group-item">Análisis de Sistemas - Intermedio</li>
+                <li class="list-group-item">Arquitectura de Sistemas - Intermedio</li>
+            </ul>
+        </section>
+    
+        <section id="contact" class="container my-5 text-center">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de:</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">Email: <a href="mailto:sebastianlopez_00@hotmail.com">sebastianlopez_00@hotmail.com</a></li>
+                <li class="list-inline-item">GitHub: <a href="https://github.com/SebastianLopez00" target="_blank">Sebastian Lopez</a></li>
+            </ul>
+        </section>
+    </body>
+    
